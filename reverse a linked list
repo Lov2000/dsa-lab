@@ -1,0 +1,18 @@
+SinglyLinkedListNode* reverse(SinglyLinkedListNode* llist) {
+  
+
+    SinglyLinkedListNode *pr_node,*cu_node,*n_node;
+    cu_node=llist;
+    n_node=cu_node->next;
+    pr_node=NULL;
+    cu_node->next=NULL;
+    while(n_node!=NULL)
+    {
+        pr_node=cu_node;
+        cu_node=n_node;
+        n_node=cu_node->next;
+        cu_node->next=pr_node;
+    }
+    llist=cu_node;
+    return llist;
+}
