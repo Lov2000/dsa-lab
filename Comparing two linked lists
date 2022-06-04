@@ -1,4 +1,5 @@
-bool compare_lists(SinglyLinkedListNode* head1, SinglyLinkedListNode* head2) {
+bool compare_lists(SinglyLinkedListNode* head1, SinglyLinkedListNode* head2)
+{
     struct SinglyLinkedListNode *t1;
     struct SinglyLinkedListNode *t2;
     t1=head1;t2 = head2;
@@ -23,5 +24,4 @@ bool compare_lists(SinglyLinkedListNode* head1, SinglyLinkedListNode* head2) {
             return 1;
         else return 0;
     }
-
 }
