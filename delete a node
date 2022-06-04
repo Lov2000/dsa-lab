@@ -1,4 +1,5 @@
-SinglyLinkedListNode* deleteNode(SinglyLinkedListNode* head, int position) {
+SinglyLinkedListNode* deleteNode(SinglyLinkedListNode* head, int position)
+{
  SinglyLinkedListNode *p,*q;
 
 if(position==0){
@@ -17,5 +18,4 @@ else{
     free(p);
 }
 return head;
-
 }
