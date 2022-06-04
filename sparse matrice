@@ -192,6 +192,5 @@ int parse_int(char* str) {
     if (endptr == str || *endptr != '\0') {
         exit(EXIT_FAILURE);
     }
-
-    return value;
+   return value;
 }
